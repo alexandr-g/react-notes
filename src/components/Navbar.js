@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 export const Navbar = () => (
   <nav className="navbar navbar-dark navbar-expand-lg bg-primary">
     <div className="navbar-brand">Note App</div>
-    <ul class="navbar-nav">
+    <ul className="navbar-nav">
       <li className="nav-item">
         <NavLink className="nav-link" to="/" exact>
           Home
