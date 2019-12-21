@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
-import { Form } from '../components/Form'
-import { Notes } from '../components/Notes'
+import { Form, Notes } from '../components'
 
 export const Home = () => {
   const notes = new Array(3)
