@@ -43,6 +43,15 @@ export const FirebaseState = ({ children }) => {
   }
 
   return (
-    <FirebaseContext.Provider value={{}}>{children}</FirebaseContext.Provider>
+    <FirebaseContext.Provider
+      value={{
+        showLoader,
+        fetchNotes,
+        addNote,
+        removeNote
+      }}
+    >
+      {children}
+    </FirebaseContext.Provider>
   )
 }
