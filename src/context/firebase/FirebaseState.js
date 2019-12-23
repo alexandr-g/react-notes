@@ -22,6 +22,17 @@ export const FirebaseState = ({ children }) => {
     console.log('fetchNotes', res.data)
   }
 
+  const addNote = async title => {
+    const note = {
+      title,
+      date: new Date().toJSON()
+    }
+
+    const res = await axios.post(`${url}/notes.json`, note)
+
+    console.log('add note', res.data)
+  }
+
   return (
     <FirebaseContext.Provider value={{}}>{children}</FirebaseContext.Provider>
   )
