@@ -48,7 +48,9 @@ export const FirebaseState = ({ children }) => {
         showLoader,
         fetchNotes,
         addNote,
-        removeNote
+        removeNote,
+        loading: state.loading,
+        notes: state.notes
       }}
     >
       {children}
