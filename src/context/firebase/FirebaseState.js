@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react'
 import axios from 'axios'
 import { FirebaseContext } from './firebaseContext'
-import { SHOW_LOADER, REMOVE_NOTE } from '../types'
+import { SHOW_LOADER, REMOVE_NOTE, ADD_NOTE } from '../types'
 import { firebaseReducer } from './firebaseReducer'
 
 const url = process.env.REACT_APP_DB_URL
@@ -31,7 +31,12 @@ export const FirebaseState = ({ children }) => {
 
     try {
       const res = await axios.post(`${url}/notes.json`, note)
-      console.log('add note', res.data)
+      const payload = {
+        ...note,
+        id: res.data.name
+      }
+
+      dispatch({ type: ADD_NOTE, payload })
     } catch (e) {
       throw new Error(e.message)
     }
