@@ -13,7 +13,7 @@ const handlers = {
   }),
   [REMOVE_NOTE]: (state, { payload }) => ({
     ...state,
-    notes: state.notes.filer(note => note.id !== payload)
+    notes: state.notes.filter(note => note.id !== payload)
   }),
   DEFAULT: state => state
 }
