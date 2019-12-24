@@ -9,8 +9,8 @@ export const About = () => (
       </p>
       <p>
         {' '}
-        Ii is a simple <strong>React</strong> app made exclusively on &nbsp;
-        <strong>React Hooks</strong> with connection to &nbsp;
+        It is a simple <strong>React</strong> app made exclusively using &nbsp;
+        <strong>React Hooks</strong> with a connection to &nbsp;
         <strong>Firebase</strong>.
       </p>
       What you can do:
