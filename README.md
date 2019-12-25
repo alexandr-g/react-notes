@@ -1,5 +1,7 @@
 **Demo:** https://react-notes-77b3a.web.app/
 
+<img width="1276" alt="Screen Shot 2019-12-25 at 8 53 37 PM" src="https://user-images.githubusercontent.com/9251327/71449971-c2618e00-2758-11ea-8de7-8e6b45c7109a.png">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
