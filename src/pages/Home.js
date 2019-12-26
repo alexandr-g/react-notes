@@ -1,7 +1,7 @@
 import React, { Fragment, useContext, useEffect } from 'react'
-import { Form, Notes } from '../components'
+
+import { Form, Notes, Loader } from '../components'
 import { FirebaseContext } from '../context/firebase/firebaseContext'
-import { Loader } from '../components/Loader'
 
 export const Home = () => {
   const { loading, notes, fetchNotes, removeNote } = useContext(FirebaseContext)
