@@ -18,7 +18,7 @@ export const About = () => (
         <li>add a new note</li>
         <li>remove note</li>
         <li>fetch all notes from the server</li>
-        <li>react-route: navigate between pages</li>
+        <li>navigate between pages</li>
         <li>see alerts and close them</li>
       </ul>
     </div>
